@@ -29,7 +29,7 @@ Colophon
 
 ### See also
 
-If you like this gem, you may also want to check out [Static Model](http://codyrobbins.com/software/static-model), [Declarative Find](http://codyrobbins.com/software/declarative-find), [Create New](http://codyrobbins.com/software/create-new), [Save Changes To](http://codyrobbins.com/software/save-changes-to), and [HTTP Error](http://codyrobbins.com/software/http-error).
+If you like this gem, you may also want to check out [Static Model](http://codyrobbins.com/software/static-model), [HTTP Error](http://codyrobbins.com/software/http-error), or [Email Test Helpers](http://codyrobbins.com/software/email-test-helpers).
 
 ### Tested with
 
