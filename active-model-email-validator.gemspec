@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = 'active-model-email-validator'
-  s.version  = '1.0'
+  s.version  = '1.0.1'
   s.summary  = 'An ActiveModel email validator based on the Mail gem.'
   s.homepage = 'http://codyrobbins.com/software/active-model-email-validator'
   s.author   = 'Cody Robbins'
