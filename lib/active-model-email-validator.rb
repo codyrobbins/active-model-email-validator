@@ -1,5 +1,7 @@
 # encoding: UTF-8
 
+require('mail')
+
 # This is a simple ActiveModel validator for email addresses built on top of the [Mail gem](http://rubygems.org/gems/mail). Instead of trying to devise an overly complex custom (and probably incorrect) regular expression to validate email addresses that is compliant with RFC 5321/5322—a difficult task—it instead relies on the Mail gem to parse the address. Since the Mail gem is an actively maintained library for working with email, if it can’t deal with an address it’s probably not worth attempting to send to anyways.
 #
 # An additional check is performed to ensure that the domain name in the address has at least two components—that is, a top-level domain and one subdomain. The validator purposefully errs on the side of inclusivity rather than exclusivity: it might allow some invalid email addresses, but it hopefully doesn’t disallow valid addresses.
