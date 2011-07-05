@@ -41,11 +41,11 @@ class EmailValidator < ActiveModel::EachValidator
   end
 
   def add_error_to(object, attribute)
-    object.errors[attribute] << error_message
+    object.errors.add(attribute, error_message)
   end
 
   def error_message
-    options[:message] || 'is not a valid email'
+    options[:message] || :email
   end
 
   def parse_address(value)
@@ -64,3 +64,6 @@ class EmailValidator < ActiveModel::EachValidator
     @address.send(:tree).domain.dot_atom_text.elements.size > 1
   end
 end
+
+require('active_support/i18n')
+I18n.load_path << File.dirname(__FILE__) + '/email_validator/locale/en.yml'
